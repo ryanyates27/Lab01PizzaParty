@@ -2,10 +2,13 @@ package com.zybooks.lab01pizzaparty
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.RadioGroup
 import android.widget.TextView
+import android.widget.Toast
 import kotlin.math.ceil
 
 const val SLICES_PER_PIZZA = 8
@@ -40,6 +43,24 @@ class MainActivity : AppCompatActivity()
         numAttendEditText = findViewById(R.id.editTextNumber)
         numPizzasTextView = findViewById(R.id.totalPizzas)
         howHungryRadioGroup = findViewById(R.id.hungry_radio_group)
+
+//        numAttendEditText.addTextChangedListener(object : TextWatcher {
+//            // Add the missing code here
+//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int)
+//            {
+//
+//            }
+//
+//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)
+//            {
+//
+//            }
+//
+//            override fun afterTextChanged(s: Editable?)
+//            {
+//
+//            }
+//        })
     }
 
     /**
